@@ -35,7 +35,7 @@ from sentence_transformers import SentenceTransformer, util
 from sklearn.metrics.pairwise import cosine_similarity
 
 # transformers 
-from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification, AutoModelForSeq2SeqLM
+from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification, AutoModelForSeq2SeqLM, BitsAndBytesConfig
 
 # Text Extraction
 from bs4 import BeautifulSoup
@@ -1470,7 +1470,6 @@ with tab3:
             model = AutoModelForSeq2SeqLM.from_pretrained(
                 model_name,
                 device_map="auto",    # automatically select GPU/CPU
-                load_in_8bit=True     # quantized for small disk usage
             )
             summarizer_pipe = pipeline(
                 "summarization",
@@ -2282,5 +2281,6 @@ with tab6:
     
     else:
         st.write("Please upload a PDF file.")
+
 
 
