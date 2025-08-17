@@ -1,13 +1,3 @@
-# For deploying text corpora in streamlit cloud
-"""
-import nltk
-import os
-
-nltk_data_path = os.path.expanduser('~/nltk_data')
-if not os.path.exists(nltk_data_path):
-    from textblob import download_corpora
-    download_corpora.download_all()
-"""
 
 #---------------------------------
 # Importing all the libraries
@@ -63,6 +53,12 @@ from sumy.summarizers.lex_rank import LexRankSummarizer
 #Evaluation 
 from rouge_score import rouge_scorer
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+
+# For deploying text corpora in streamlit cloud
+nltk_data_path = os.path.expanduser('~/nltk_data')
+if not os.path.exists(nltk_data_path):
+    from textblob import download_corpora
+    download_corpora.download_all()
 
 
 # Configuring Google API key
@@ -2286,3 +2282,4 @@ with tab6:
     
     else:
         st.write("Please upload a PDF file.")
+
