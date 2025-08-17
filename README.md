@@ -136,6 +136,15 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 
 **Result:** Gemini outperformed Stable Diffusion in terms of relevance and clarity 
 
+### Folder Structure
+**Folder**: Bias and Toxicity detection in text                                           
+**Subfolders**:     
+- *Text _to_image_generation_modified.ipynb*: This the main Python code file for image generation using gemini and evalution of scores for both gemini as well as Stable diffusion.
+- *Stable_diffusion_generation.ipynb*: File contains code for image generation using stable diffusion.
+- *Image_Evalmetrics.csv*: File contains the evaluated metrics for generated images using both models.
+- *inception_score_per_category.csv*: File contains inceptions scores per image category generated for Gemini generated images.
+- *inception_score_per_category_SD.csv*: File contains inceptions scores per image category generated for Stable Diffusion generated images.
+
 ---
 
 ## E. Resume Evaluation and Feedback using LLM  
