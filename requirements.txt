@@ -48,6 +48,7 @@ streamlit
 plotly
 
 # BLIP (for image captioning)
-git+https://github.com/salesforce/BLIP.git
+salesforce-lavis
 git+https://github.com/openai/CLIP.git
+
 
