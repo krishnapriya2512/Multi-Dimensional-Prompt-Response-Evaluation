@@ -1151,7 +1151,7 @@ def load_transformer_sentiment(model_name: str = "distilbert-base-uncased-finetu
         return None
 
 @st.cache_resource
-def load_summarizer(model_name: str = "facebook/bart-large-cnn"):
+def load_summarizer(model_name: str = "sshleifer/distilbart-cnn-12-6"):
     """Load transformer summarizer from Hugging Face Hub."""
     try:
         return pipeline("summarization", model=model_name, tokenizer=model_name)
@@ -1465,7 +1465,7 @@ with tab3:
         # ------------------- Load lightweight Transformer -------------------
         summarizer_pipe, summarizer_tokenizer = None, None
         if run_transformer_summ:
-            model_name = "facebook/bart-large-cnn"
+            model_name = "sshleifer/distilbart-cnn-12-6"
             summarizer_tokenizer = AutoTokenizer.from_pretrained(model_name)
             model = AutoModelForSeq2SeqLM.from_pretrained(
                 model_name,
@@ -2281,6 +2281,7 @@ with tab6:
     
     else:
         st.write("Please upload a PDF file.")
+
 
 
 
