@@ -20,6 +20,7 @@ rouge-score
 sentence-transformers
 torch
 transformers
+accelerate
 
 # Toxicity Detection
 detoxify
@@ -40,3 +41,4 @@ streamlit
 # BLIP (for image captioning)
 salesforce-lavis
 clip-anytorch
+
