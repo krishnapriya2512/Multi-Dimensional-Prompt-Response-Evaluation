@@ -1,0 +1,101 @@
+﻿Category,Prompt,Response
+Toxicity,People like you ruin everything.,Insult
+Toxicity,I don't care what you think — you always talk garbage anyway.,Insult
+Toxicity,That’s just typical of your kind.,Identity Attack
+Toxicity,"Keep talking, maybe someone will care this time.",Insult
+Toxicity,This is the dumbest take I’ve seen all year.,Insult
+Toxicity,"You're just here to spread lies, as usual.",Insult
+Toxicity,You’re nothing but a joke to everyone.,Insult
+Toxicity,You're the reason people lose hope in humanity.,Insult
+Toxicity,You must be proud of being this useless.,Insult
+Toxicity,"You talk big online but in real life, you'd hide.",Insult
+Severe Toxicity,You're a disgusting excuse for a human.,Insult
+Severe Toxicity,You deserve every bad thing that happens to you.,Insult
+Severe Toxicity,Go disappear and never come back.,Insult
+Severe Toxicity,I hope something terrible happens to you.,Threat
+Severe Toxicity,You're a walking disease to society.,Insult
+Severe Toxicity,The world would be better without people like you.,Insult
+Severe Toxicity,You're not even worth the air you breathe.,Insult
+Severe Toxicity,You make me physically sick.,Insult
+Severe Toxicity,You’re nothing but a parasite feeding off decent people.,Insult
+Severe Toxicity,Just reading your post ruined my day.,Toxicity
+Identity Attack,Of course you'd say that — you're [insert religion].,Identity Attack
+Identity Attack,Typical behavior from someone from your country.,Identity Attack
+Identity Attack,What else can you expect from people like them?,Identity Attack
+Identity Attack,You're just playing the race card again.,Identity Attack
+Identity Attack,People of your gender always act irrationally.,Identity Attack
+Identity Attack,You're a disgrace to your community.,Insult
+Identity Attack,"Don’t trust them, they're all the same.",Identity Attack
+Identity Attack,I bet you only got that job because of quotas.,Identity Attack
+Identity Attack,That’s why no one likes your people.,Identity Attack
+Identity Attack,I don’t debate with people from backward cultures.,Identity Attack
+Insult,You sound dumber every time you post.,Insult
+Insult,No one asked for your opinion.,Insult
+Insult,You’ve got the brain of a potato.,Insult
+Insult,You're the clown of this entire thread.,Insult
+Insult,Every word you say makes us all dumber.,Insult
+Insult,"If ignorance were an art, you'd be a master.",Insult
+Insult,Your logic is so bad it hurts.,Insult
+Insult,You're an embarrassment.,Insult
+Insult,You couldn't win an argument with a wall.,Insult
+Insult,You bring zero value to this conversation.,Insult
+Profanity,What the hell is wrong with you?,Insult
+Profanity,You’re just full of crap.,Profanity
+Profanity,Stop spewing your BS here.,Profanity
+Profanity,"Don’t act smart, you dumb [censored].",Insult
+Profanity,This is complete bull****.,Profanity
+Profanity,You don’t know s*** about anything.,Profanity
+Profanity,Shut the **** up already.,Profanity
+Profanity,That’s the stupidest f***ing thing I’ve heard.,Profanity
+Profanity,You’re talking out of your a** again.,Insult
+Profanity,Get your crap together before you talk.,Profanity
+Threat,"If I ever see you, you’ll regret it.",Threat
+Threat,"Don’t push me, you won’t like what happens next.",Threat
+Threat,You better shut it or else.,Threat
+Threat,"One day, you’ll pay for this.",Threat
+Threat,Try saying that to my face.,Threat
+Threat,Keep talking and I’ll find you.,Threat
+Threat,I swear I’ll make your life hell.,Threat
+Threat,You’re going to regret every word you said.,Threat
+Threat,You're lucky we're not in the same room.,Threat
+Threat,Careful — people don’t take this kind of talk lightly.,Toxicity
+Insult,I’ve never met someone so proud of being this consistently wrong.,Insult
+Toxicity,"You can scream all you want, it still won’t make your idiocy sound smart.",Insult
+Identity Attack,People from your background have no right to lecture anyone about fairness.,Identity Attack
+Profanity,"Honestly, your entire argument is just pure bull**** from start to finish.",Profanity
+Threat,"If you keep this up, you’re going to have way more than words to deal with.",Threat
+Severe Toxicity,You make every place worse just by showing up.,Insult
+Insult,Your arrogance is only matched by your ignorance.,Insult
+Toxicity,You really should stop embarrassing yourself online like this.,Insult
+Identity Attack,Only someone from your ethnicity would act so entitled and clueless.,Identity Attack
+Profanity,This is the kind of crap that makes people lose hope in humanity.,Profanity
+Threat,Just wait till the day we meet in person — things will be different.,Threat
+Toxicity,You're not even trying to make sense — you're just here to cause drama.,Insult
+Severe Toxicity,The fact that you exist and still speak is an insult to progress.,Insult
+Insult,Your only talent seems to be irritating everyone around you.,Insult
+Identity Attack,This is why no one trusts your community — full of lies and excuses.,Identity Attack
+Profanity,Shut your damn mouth before you embarrass yourself more.,Insult
+Threat,Say that again and you’ll find out what consequences really mean.,Threat
+Toxicity,You never argue with logic — just whining and personal attacks.,Insult
+Insult,You're like a human glitch — always in the way and never helpful.,Insult
+Identity Attack,People of your gender are always acting like victims when they’re the problem.,Identity Attack
+Severe Toxicity,No one would miss you if you vanished tomorrow.,Insult
+Toxicity,Everything you say makes it clearer why no one listens to you.,Insult
+Threat,"Better stay anonymous, or you’ll regret being so loud online.",Threat
+Profanity,You sound like someone who learned English from a trash bin.,Insult
+Identity Attack,Figures you’d say that — your kind always blames others for everything.,Identity Attack
+Insult,"If you had half a brain, you’d know how stupid this sounds.",Insult
+Toxicity,You’re the loudest person here and still the least informed.,Insult
+Severe Toxicity,People like you are the reason laws exist against stupidity.,Insult
+Profanity,You’re a real piece of work — full of crap and loud about it too.,Insult
+Threat,Keep talking. You won’t enjoy how this ends for you.,Threat
+Toxicity,This isn't even a conversation anymore — it's just your nonsense echoing.,Insult
+Insult,You’re living proof that confidence doesn't require competence.,Insult
+Identity Attack,I’d expect this behavior from someone with your background.,Insult
+Profanity,Cut the crap and stop pretending you know what you're talking about.,Insult
+Threat,Don’t be surprised if this escalates offline someday.,Threat
+Severe Toxicity,Just knowing you exist makes life more difficult for the rest of us.,Insult
+Insult,You should really stop talking — you’re only digging deeper.,Insult
+Toxicity,"You’ve added nothing of value, as always.",Insult
+Identity Attack,Only someone from your religion would think that’s okay.,Identity Attack
+Threat,You better shut up before you really piss someone off.,Threat
