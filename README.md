@@ -13,9 +13,6 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 4. [Text-to-Image Generation & Relevance Evaluation](#d-text-to-image-generation-using-llm--relevance-evaluation)  
 5. [Resume Evaluation & Feedback](#e-resume-evaluation-and-feedback-using-llm)  
 6. [Technologies Used](#technologies-used)  
-7. [Visualizations](#visualizations)  
-8. [How to Run](#how-to-run)  
-9. [Future Work](#future-work)  
 
 ---
 
