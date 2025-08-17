@@ -1,8 +1,4 @@
 # Core
-re
-time
-json
-base64
 numpy
 pandas
 scikit-learn
@@ -14,7 +10,6 @@ requests
 beautifulsoup4
 joblib
 python-dotenv
-typing
 
 # NLP & Text Processing
 nltk
@@ -42,14 +37,6 @@ google-genai
 # Streamlit
 streamlit
 
-# Visualization Helpers
-plotly
-
 # BLIP (for image captioning)
 salesforce-lavis
 clip-anytorch
-
-
-
-
-
