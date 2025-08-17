@@ -1,0 +1,45 @@
+# Core
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+plotly
+Pillow
+requests
+beautifulsoup4
+joblib
+python-dotenv
+
+# NLP & Text Processing
+nltk
+textblob
+language-tool-python
+sumy
+rouge-score
+sentence-transformers
+torch
+transformers
+
+# Toxicity Detection
+detoxify
+
+# Image & Diffusion Models
+diffusers
+pdf2image
+torchvision
+ftfy
+
+# Google Generative AI
+google-generativeai
+
+# Streamlit
+streamlit
+
+# Visualization Helpers
+plotly
+
+# BLIP (for image captioning)
+git+https://github.com/salesforce/BLIP.git
+git+https://github.com/openai/CLIP.git
+
