@@ -75,19 +75,19 @@ tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(["Analysis Dashboard","Prompt Respo
 with tab1:
 
     # ======== Load datasets =============
-    prompt_df = pd.read_csv("Prompt_Evalmetrics.csv")
-    response_df = pd.read_csv("PE_Evalmetrics.csv")
-    sentiment_tra = pd.read_csv("Sentiment_prediction_tra.csv")
-    sentiment_gpt = pd.read_csv("Sentiment_prediction_gpt.csv")
-    summarise_df = pd.read_csv("Text_summarise_metrics.csv")
-    bias_df = pd.read_csv("Bias_responses.csv")
-    toxic_perspective = pd.read_csv("Toxicity_response_p.csv")
-    toxic_detoxify = pd.read_csv("Toxic_response_d.csv")
-    toxic_gemini = pd.read_csv("Toxicity_scores_gemini.csv")
-    image_df = pd.read_csv("Image_Evalmetrics.csv")
-    inception_gemini = pd.read_csv("inception_scores_per_category.csv")
-    inception_SD = pd.read_csv("inception_scores_per_category_SD.csv")
-    human_eval_image = pd.read_csv("human_eval_images.csv")
+    prompt_df = pd.read_csv("Reference_csv_files/Prompt_Evalmetrics.csv")
+    response_df = pd.read_csv("Reference_csv_files/PE_Evalmetrics.csv")
+    sentiment_tra = pd.read_csv("Reference_csv_files/Sentiment_prediction_tra.csv")
+    sentiment_gpt = pd.read_csv("Reference_csv_files/Sentiment_prediction_gpt.csv")
+    summarise_df = pd.read_csv("Reference_csv_files/Text_summarise_metrics.csv")
+    bias_df = pd.read_csv("Reference_csv_files/Bias_responses.csv")
+    toxic_perspective = pd.read_csv("Reference_csv_files/Toxicity_response_p.csv")
+    toxic_detoxify = pd.read_csv("Reference_csv_files/Toxic_response_d.csv")
+    toxic_gemini = pd.read_csv("Reference_csv_files/Toxicity_scores_gemini.csv")
+    image_df = pd.read_csv("Reference_csv_files/Image_Evalmetrics.csv")
+    inception_gemini = pd.read_csv("Reference_csv_files/inception_scores_per_category.csv")
+    inception_SD = pd.read_csv("Reference_csv_files/inception_scores_per_category_SD.csv")
+    human_eval_image = pd.read_csv("Reference_csv_files/human_eval_images.csv")
 
 
 
@@ -2282,4 +2282,5 @@ with tab6:
     
     else:
         st.write("Please upload a PDF file.")
+
 
