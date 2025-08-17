@@ -18,7 +18,8 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 
 ## A. Prompt Engineering and Evaluation of LLM Response  
 
-- **100 prompts** across 10 categories: *Factual, Creative Writing, Instructional, Philosophical, Casual, Analytical, Professional, Personal Growth, Technical, Open-ended*.  
+
+- **Dataset**: 100 prompts across 10 categories: *Factual, Creative Writing, Instructional, Philosophical, Casual, Analytical, Professional, Personal Growth, Technical, Open-ended*.  
 - Applied to **Gemini model**, responses cleaned and evaluated.  
 
 ### 📝 Evaluation Metrics  
@@ -26,15 +27,16 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 - Sentiment Polarity & Subjectivity  
 - Relevance to Prompt  
 - Lexical Diversity  
-- Grammar Errors & Grammar Score  
+- Grammar Errors & Grammar Score
+- Clartiy and Coherence
 
 ### 📊 Visualizations  
-- Response length by category  
-- Relevance scores  
-- Sentiment polarity & subjectivity by category  
-- Grammar score distribution  
-- Lexical diversity by category  
-- Correlation heatmap & Pairplot  
+- Prompt and Response length by category  
+- Prompt and Response Polarity & Subjectivity by category  
+- Prompt and response Lexical diversity by category  
+- Grammer Score and Grammatical error for prompt and Response
+- Clarity and Coherence plots for Prompt and Response by category
+- Correlation heatmap between numerical variables  
 
 ✅ Automated pipeline for evaluation  
 
@@ -44,8 +46,8 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 
 ### 1. Sentiment Analysis  
 - **Dataset:** Amazon Polarity  
-- **Traditional Approach:** Preprocessing → Vectorization → Logistic Regression/Naïve Bayes → Hyperparameter tuning → Classification Report  
-- **Transformer Approach:** HuggingFace pipeline → Training & Evaluation  
+- **Traditional Approach:** Preprocessing → Tfidf Vectorization → Logistic Regression → Hyperparameter tuning → Classification Report  
+- **Transformer Approach:** HuggingFace pipeline → Training → Classification
 - **Result:** Traditional Model outperformed Transformer for this task.  
 
 ### 2. Text Summarization  
@@ -79,7 +81,8 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 - **Evaluation Metrics:** Toxicity, Severe Toxicity, Insult, Profanity, Threat, Identity Attack  
 - **Visualizations:**  
   - Confusion matrices & classification reports  
-  - Radar chart for overall comparison  
+  - Radar chart for overall comparison
+- **Results:** Gemini Performed well compared to the other two models. It had less misclassifications.
 
 ---
 
