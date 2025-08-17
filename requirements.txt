@@ -10,6 +10,7 @@ requests
 beautifulsoup4
 joblib
 python-dotenv
+bitsandbytes>=0.43.0
 
 # NLP & Text Processing
 nltk
@@ -41,4 +42,5 @@ streamlit
 # BLIP (for image captioning)
 salesforce-lavis
 clip-anytorch
+
 
