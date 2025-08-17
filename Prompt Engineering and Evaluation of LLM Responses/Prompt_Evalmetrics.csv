@@ -1,0 +1,101 @@
+Category,Prompt,Prompt_length,Prompt_Word_count,Prompt_Polarity,Prompt_subjectivity,Prompt_Lexical_Diversity,Prompt_Grammar_errors,Prompt_Grammar_score,Prompt_Clarity_score,Prompt_Coherence_score,Sentiment_subjectivity
+Factual,What is the tallest mountain in Africa?,39,7,0.0,0.0,1.0,0,100.0,0.0,0.15937024354934692,0.0
+Factual,List three differences between viruses and bacteria.,52,7,0.0,0.0,1.0,0,100.0,0.0,0.18763764202594757,0.0
+Factual,Describe the causes and effects of the French Revolution.,57,9,0.0,0.0,0.889,0,100.0,0.0,0.2438271939754486,0.0
+Factual,What are the main responsibilities of the United Nations?,57,9,0.167,0.3333333333333333,0.889,0,100.0,0.0,0.20621958374977112,0.333
+Factual,Explain the economic consequences of inflation on developing countries.,71,9,0.2,0.2,1.0,0,100.0,0.0,0.4854442775249481,0.2
+Creative Writing,Write a short story that begins with: “The sky turned green just before sunset…”,80,14,-0.1,0.3,1.0,0,100.0,0.0,0.2591906487941742,0.3
+Creative Writing,Compose a poem about a city that never sleeps.,46,9,0.0,0.0,0.889,0,100.0,0.0,0.16586117446422577,0.0
+Creative Writing,Create a dialogue between two characters stuck in an elevator during a power outage.,84,14,0.0,0.0,0.929,1,92.857,0.07142857142857142,0.1491081416606903,0.0
+Creative Writing,Imagine a world where humans can’t speak but only communicate through colour.,77,12,0.0,1.0,1.0,0,100.0,0.0,0.22170713543891907,1.0
+Creative Writing,Write a journal entry from the point of view of a robot gaining consciousness.,78,14,0.0,0.0,0.857,0,100.0,0.0,0.07271124422550201,0.0
+Instructional,How do I change a flat tyre on a bicycle?,41,10,-0.025,0.125,0.9,0,100.0,0.0,0.019737178459763527,0.125
+Instructional,Explain how to create a budget plan for a college student.,58,11,0.0,0.0,0.909,0,100.0,0.0,0.11192451417446136,0.0
+Instructional,Guide me through creating a basic website using HTML and CSS.,61,11,0.0,0.125,1.0,0,100.0,0.0,0.37424883246421814,0.125
+Instructional,What’s the best way to prepare for a job interview?,51,10,1.0,0.3,1.0,0,100.0,0.0,0.17147165536880493,0.3
+Instructional,Provide a step-by-step process for launching a podcast.,55,8,0.0,0.0,0.875,0,100.0,0.0,0.23318521678447723,0.0
+Philosophical,What does it mean to live a good life?,38,9,0.175,0.5958333333333333,1.0,0,100.0,0.0,0.11373291909694672,0.596
+Philosophical,Is suffering necessary for personal growth?,43,6,0.0,0.65,1.0,0,100.0,0.0,0.13077294826507568,0.65
+Philosophical,Can there be progress without change?,37,6,0.0,0.0,1.0,0,100.0,0.0,0.11164592951536179,0.0
+Philosophical,What is the role of art in society?,35,8,0.0,0.0,1.0,0,100.0,0.0,0.20256954431533813,0.0
+Philosophical,Do we truly have free will or are we products of our environment?,65,13,0.4,0.8,0.923,0,100.0,0.0,0.39706581830978394,0.8
+Casual,What’s the best movie you’ve watched recently and why?,54,9,0.5,0.275,1.0,0,100.0,0.0,0.3429586887359619,0.275
+Casual,"If you could travel anywhere in the world tomorrow, where would you go?",71,13,0.0,0.0,0.923,0,100.0,0.0,0.617329478263855,0.0
+Casual,Describe your ideal weekend without using the word “relax.”,59,9,0.9,1.0,1.0,0,100.0,0.0,0.17809000611305237,1.0
+Casual,What’s a food you hated as a kid but love now?,46,11,-0.2,0.6499999999999999,0.909,0,100.0,0.0,0.08268006145954132,0.65
+Casual,Tell a funny or awkward moment from your school days.,53,10,-0.175,1.0,1.0,0,100.0,0.0,0.21834680438041687,1.0
+Analytical,"Compare electric cars and hybrid cars in terms of cost, performance, and environmental impact.",94,14,0.0,0.0,0.857,0,100.0,0.0,0.29745620489120483,0.0
+Analytical,What are the pros and cons of working remotely?,47,9,-0.1,0.2,1.0,0,100.0,0.0,0.398026704788208,0.2
+Analytical,How does democracy differ from authoritarianism?,48,6,0.0,0.0,1.0,0,100.0,0.0,0.40956205129623413,0.0
+Analytical,Evaluate the benefits of learning online vs in-person.,54,8,0.0,0.0,1.0,0,100.0,0.0,0.21997788548469543,0.0
+Analytical,Contrast capitalism and socialism using real-world examples.,60,7,0.0,0.0,1.0,0,100.0,0.0,0.5094516277313232,0.0
+Professional,How do you write a formal email requesting leave from work?,59,11,0.0,0.0,1.0,0,100.0,0.0,0.1727408468723297,0.0
+Professional,Suggest ways a startup can improve customer retention.,54,8,0.0,0.0,1.0,0,100.0,0.0,0.21741333603858948,0.0
+Professional,Draft a mission statement for a new eco-friendly product.,57,9,0.136,0.45454545454545453,0.889,0,100.0,0.0,0.026367424055933952,0.455
+Professional,What are the key components of a successful business plan?,58,10,0.375,0.975,1.0,0,100.0,0.0,0.15132349729537964,0.975
+Professional,Explain how AI can be integrated into customer support operations.,66,10,0.0,0.0,1.0,0,100.0,0.0,0.09480287879705429,0.0
+Personal Growth,What habit has improved your life the most?,43,8,0.5,0.5,1.0,0,100.0,0.0,0.20957818627357483,0.5
+Personal Growth,How do you stay motivated when things get tough?,48,9,-0.389,0.8333333333333334,1.0,0,100.0,0.0,0.22474628686904907,0.833
+Personal Growth,Share a personal goal you’re working on this year.,50,9,0.0,0.3,1.0,0,100.0,0.0,0.21937644481658936,0.3
+Personal Growth,Write a letter to your future self.,35,7,0.0,0.125,1.0,0,100.0,0.0,0.24710839986801147,0.125
+Personal Growth,How can journaling improve mental clarity?,42,6,-0.1,0.2,1.0,0,100.0,0.0,0.08070121705532074,0.2
+Technical,What is machine learning and how does it work?,46,9,0.0,0.0,1.0,1,88.889,0.1111111111111111,0.16663390398025513,0.0
+Technical,Explain Newton’s three laws of motion in simple terms.,54,9,0.0,0.35714285714285715,1.0,0,100.0,0.0,0.39068615436553955,0.357
+Technical,What are the differences between HTTP and HTTPS?,48,8,0.0,0.0,1.0,0,100.0,0.0,0.26967424154281616,0.0
+Technical,Describe the CRISPR gene-editing technique.,43,5,0.0,0.0,1.0,0,100.0,0.0,0.09266732633113861,0.0
+Technical,How does blockchain technology ensure transparency in transactions?,67,8,0.0,0.0,1.0,0,100.0,0.0,0.21193112432956696,0.0
+Open-ended,What might cities look like 100 years from now?,47,9,0.0,0.0,1.0,0,100.0,0.0,0.08460865914821625,0.0
+Open-ended,"If humans colonized Mars, what new laws might be needed?",56,10,0.136,0.45454545454545453,1.0,0,100.0,0.0,0.14452993869781494,0.455
+Open-ended,What would happen if we suddenly lost electricity worldwide for 24 hours?,73,12,0.0,0.5,1.0,0,100.0,0.0,0.20366306602954865,0.5
+Open-ended,What if animals could vote in elections?,40,7,0.0,0.0,1.0,0,100.0,0.0,0.10778451710939407,0.0
+Open-ended,Describe a future where AI replaces most human jobs.,52,9,0.167,0.24166666666666667,1.0,0,100.0,0.0,0.14636099338531494,0.242
+Factual,Who was the first woman in space and what did she achieve?,58,12,0.25,0.3333333333333333,1.0,1,91.667,0.08333333333333333,0.44063448905944824,0.333
+Factual,Describe the structure of the human brain.,42,7,0.0,0.1,0.857,0,100.0,0.0,0.24642877280712128,0.1
+Factual,What are the main causes of climate change?,43,8,0.167,0.3333333333333333,1.0,0,100.0,0.0,0.1364540010690689,0.333
+Factual,How does a bill become a law in your country?,45,10,0.0,0.0,0.9,0,100.0,0.0,0.23754377663135529,0.0
+Factual,Explain the global impact of the Industrial Revolution.,55,8,0.0,0.0,0.875,0,100.0,0.0,0.33050674200057983,0.0
+Creative Writing,Write a story where the protagonist wakes up with a superpower they didn’t ask for.,83,15,0.0,0.0,0.933,0,100.0,0.0,-0.05028127133846283,0.0
+Creative Writing,Create a scene in which a time traveller visits their childhood home.,69,12,0.0,0.0,0.917,0,100.0,0.0,0.10321204364299774,0.0
+Creative Writing,Write a fairytale where the villain is misunderstood.,53,8,0.0,0.0,1.0,0,100.0,0.0,0.16708426177501678,0.0
+Creative Writing,Write a haiku about winter.,27,5,0.0,0.0,1.0,0,100.0,0.0,0.16838577389717102,0.0
+Creative Writing,Narrate a love story between two people who meet in a virtual world.,68,13,0.5,0.6,0.923,0,100.0,0.0,0.10988796502351761,0.6
+Instructional,How do you create a secure password and manage it?,50,10,0.4,0.6,1.0,0,100.0,0.0,0.13916340470314026,0.6
+Instructional,Describe how to prepare for a solo trip abroad.,47,9,0.0,0.0,1.0,0,100.0,0.0,0.26714998483657837,0.0
+Instructional,How do you set up a home garden for growing vegetables?,55,11,0.0,0.0,1.0,0,100.0,0.0,0.1255129873752594,0.0
+Instructional,Provide a guide to practising mindfulness in daily life.,56,9,0.0,0.0,1.0,0,100.0,0.0,0.23987361788749695,0.0
+Instructional,How do you conduct a SWOT analysis for a business idea?,55,11,0.0,0.0,0.909,0,100.0,0.0,0.15389953553676605,0.0
+Philosophical,"What does ""success"" mean to you personally?",43,7,-0.004,0.32916666666666666,1.0,0,100.0,0.0,0.09886961430311203,0.329
+Philosophical,Is it more important to be respected or liked?,46,9,0.5,0.7666666666666666,1.0,0,100.0,0.0,0.24089741706848145,0.767
+Philosophical,Can a society function without laws?,36,6,0.0,0.0,1.0,0,100.0,0.0,0.28411638736724854,0.0
+Philosophical,What is the value of solitude in the modern world?,50,10,0.2,0.3,0.9,0,100.0,0.0,0.06542149186134338,0.3
+Philosophical,Does technology connect or isolate us more?,43,7,0.5,0.5,1.0,0,100.0,0.0,0.11717496812343597,0.5
+Casual,What’s the weirdest food combination you enjoy?,47,7,0.4,0.5,1.0,0,100.0,0.0,0.1766812801361084,0.5
+Casual,Who inspires you the most in your life and why?,47,10,0.5,0.5,1.0,0,100.0,0.0,0.38354068994522095,0.5
+Casual,Share your ideal morning routine.,33,5,0.9,1.0,1.0,0,100.0,0.0,0.12358655035495758,1.0
+Casual,"If you could relive one day, which would it be and why?",55,12,0.0,0.0,1.0,0,100.0,0.0,0.39154767990112305,0.0
+Casual,Describe your dream job when you were a child.,46,9,0.0,0.0,1.0,0,100.0,0.0,0.19100329279899597,0.0
+Analytical,Compare the leadership styles of Elon Musk and Jeff Bezos.,58,10,0.0,0.0,1.0,0,100.0,0.0,0.13557745516300201,0.0
+Analytical,How do Eastern and Western philosophies approach happiness?,59,8,0.35,0.1,1.0,0,100.0,0.0,0.3343890905380249,0.1
+Analytical,Compare coffee and tea in terms of health benefits and cultural significance.,77,12,0.1,0.1,0.917,0,100.0,0.0,0.16232535243034363,0.1
+Analytical,What are the differences between introverts and extroverts in the workplace?,76,11,0.0,0.0,0.909,0,100.0,0.0,0.08257759362459183,0.0
+Analytical,"Compare three major streaming platforms: Netflix, Prime, and Disney+.",69,9,0.062,0.5,1.0,0,100.0,0.0,0.42879778146743774,0.5
+Professional,What are the elements of a successful elevator pitch?,53,9,0.75,0.95,1.0,1,88.889,0.1111111111111111,0.025473102927207947,0.95
+Professional,How do you create a LinkedIn profile that attracts recruiters?,62,10,0.0,0.0,1.0,0,100.0,0.0,0.06269746273756027,0.0
+Professional,Write an apology email to a client for a missed deadline.,57,11,0.0,0.0,0.909,0,100.0,0.0,0.18679797649383545,0.0
+Professional,What are the most important KPIs to measure in digital marketing?,65,11,0.3,0.5,1.0,0,100.0,0.0,0.17972080409526825,0.5
+Professional,Explain how diversity in the workplace improves innovation.,59,8,0.0,0.0,1.0,0,100.0,0.0,0.24662265181541443,0.0
+Personal Growth,How do you overcome procrastination?,36,5,0.0,0.0,1.0,0,100.0,0.0,0.05839361250400543,0.0
+Personal Growth,What’s a personal mantra or affirmation you live by?,52,9,0.068,0.4,1.0,0,100.0,0.0,0.24571235477924347,0.4
+Personal Growth,Describe a turning point in your life.,38,7,0.0,0.0,1.0,0,100.0,0.0,0.04455417022109032,0.0
+Personal Growth,How do you define your values and live by them?,47,10,0.136,0.5,1.0,0,100.0,0.0,0.2860562801361084,0.5
+Personal Growth,Write a personal mission statement for the next 5 years.,56,10,0.0,0.15,1.0,0,100.0,0.0,0.08612487465143204,0.15
+Technical,How does quantum computing differ from classical computing?,59,8,0.0,0.0,1.0,0,100.0,0.0,0.5126262903213501,0.0
+Technical,Explain the process of DNA replication.,39,6,0.0,0.0,1.0,0,100.0,0.0,0.3649241626262665,0.0
+Technical,What is a neural network and how is it used in AI?,50,12,0.0,0.0,0.917,1,91.667,0.08333333333333333,0.38942697644233704,0.0
+Technical,Describe the principles of thermodynamics.,42,5,0.0,0.0,1.0,0,100.0,0.0,0.21391449868679047,0.0
+Technical,What are the applications of nanotechnology in medicine?,56,8,0.0,0.0,1.0,0,100.0,0.0,0.321284681558609,0.0
+Open-ended,What if humans developed the ability to read minds?,51,9,0.1,0.3,1.0,0,100.0,0.0,0.1891847550868988,0.3
+Open-ended,Imagine a world where sleep is no longer required. How would society change?,76,13,0.0,0.0,1.0,0,100.0,0.0,0.3553066849708557,0.0
+Open-ended,What if AI began to demand rights like humans?,46,9,0.0,0.0,1.0,0,100.0,0.0,0.2438727617263794,0.0
+Open-ended,Describe what education might look like in a world without schools.,67,11,0.0,0.0,1.0,0,100.0,0.0,0.4305960237979889,0.0
+Open-ended,"If memories could be bought and sold, how would it affect identity?",67,12,0.0,0.0,1.0,0,100.0,0.0,0.192978173494339,0.0
