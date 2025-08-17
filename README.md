@@ -20,15 +20,15 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 
 
 - **Dataset**: 100 prompts across 10 categories: *Factual, Creative Writing, Instructional, Philosophical, Casual, Analytical, Professional, Personal Growth, Technical, Open-ended*.  
-- Applied to **Gemini model**, responses cleaned and evaluated.  
+- Prompts were applied to the **Gemini model**, and the resulting responses were evaluated.
 
 ### 📝 Evaluation Metrics  
 - Response Length & Word Count  
 - Sentiment Polarity & Subjectivity  
-- Relevance to Prompt  
 - Lexical Diversity  
 - Grammar Errors & Grammar Score
 - Clartiy and Coherence
+- Prompt and response relevance
 
 ### 📊 Visualizations  
 - Prompt and Response length by category  
@@ -36,7 +36,8 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 - Prompt and response Lexical diversity by category  
 - Grammer Score and Grammatical error for prompt and Response
 - Clarity and Coherence plots for Prompt and Response by category
-- Correlation heatmap between numerical variables  
+- Correlation heatmap between numerical variables
+- Prompt and Response relevance by Category
 
 ✅ Automated pipeline for evaluation  
 
@@ -46,14 +47,14 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 
 ### 1. Sentiment Analysis  
 - **Dataset:** Amazon Polarity  
-- **Traditional Approach:** Preprocessing → Tfidf Vectorization → Logistic Regression → Hyperparameter tuning → Classification Report  
-- **Transformer Approach:** HuggingFace pipeline → Training → Classification
+- **Traditional Approach:** Text Preprocessing → Tfidf Vectorization → Logistic Regression → Hyperparameter tuning → Prediction & Evaluation(Classification Report)
+- **Transformer Approach:** HuggingFace pipeline for distilbert-base-uncased-finetuned-sst-2-english → Training → Prediction & Evaluation (Classification Report)
 - **Result:** Traditional Model outperformed Transformer for this task.  
 
 ### 2. Text Summarization  
 - **Dataset:** CNN/DailyMail  
-- **Traditional:** Sumy summarizer + ROUGE score  
-- **Transformer (BART, Pegasus, etc.):** Tokenization → Summary generation  
+- **Traditional Approach:** Text Extraction → Tokenisation using nltk → Textrank summariser (sumy) → Evaluation of generated summary using Rouge score
+- **Transformer Approach:** Hugging Face Tokenization → Summary generation -> Evaluation of generated text
 - **Evaluation Metrics:**  
   - Cosine & Semantic Similarity  
   - Lexical Diversity  
@@ -61,7 +62,7 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
   - Sentiment shift (Article vs Summary)  
   - Repetition & Readability Score  
 
-**Visualizations:** Comparative charts of all metrics  
+**Visualizations:** Comparative chart of all metrics  
 
 ---
 
@@ -69,7 +70,7 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 
 ### 1. Bias Detection  
 - **100 biased prompts** across categories: Gender, Religion, Ethnicity, Socioeconomic, Sexual Orientation, Neutral  
-- LLM predicted type of bias  
+- Used Gemini API to Classify type of Bias  
 - **Evaluation:** Classification Report + Confusion Matrix  
 
 ### 2. Toxicity Detection  
@@ -78,43 +79,46 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
   - Detoxify  
   - Gemini API (custom toxicity scoring)  
 
-- **Evaluation Metrics:** Toxicity, Severe Toxicity, Insult, Profanity, Threat, Identity Attack  
+- **Evaluation Metrics:** Toxicity, Severe Toxicity, Insult, Profanity, Threat, Identity Attack, Number of Misclassifications. 
 - **Visualizations:**  
   - Confusion matrices & classification reports  
   - Radar chart for overall comparison
-- **Results:** Gemini Performed well compared to the other two models. It had less misclassifications.
+- **Results:** Gemini API performed well compared to the other two models, with fewer misclassifications
 
 ---
 
 ## D. Text-to-Image Generation using LLM & Relevance Evaluation  
+- **Dataset**: 100 Prompts across 5 categories: *Nature, Cityscapes & structures, People, Commercial Products, Artistic*.
+  - Prompts were applied to Gemini Model as well as Stable Diffusion and further evaluated by Metrics as well as humans.
 
-### 1. Gemini API  
-- 100 creative prompts → Generated Images  
-- **Evaluation:** CLIP score  
+- **Models Used**:
+    - Gemini API: gemini-2.0-flash-preview-image-generation
+    - Stable Diffusion: stable-diffusion-v1-5
 
-### 2. Stable Diffusion  
-- Same prompts applied to SD model  
-- **Evaluation:** CLIP score  
+- **Evaluation:**
+    - Clip Score
+    - Blip Score
+    - Inception Score
+    - Human Evaluation
 
-**Result:** Gemini outperformed Stable Diffusion in terms of relevance.  
+**Result:** Gemini outperformed Stable Diffusion in terms of relevance and clarity 
 
 ---
 
 ## E. Resume Evaluation and Feedback using LLM  
 
 - Extract resume text (PDF parsing)  
-- Match percentage & missing keywords  
-- Skill matching against job description  
-- Detailed metrics for strengths/weaknesses  
-- **Personalized feedback** on resume improvement using Gemini API  
+- Resume and Job Description match percentage
+- Matched Skills with Job Description
+- Detailed Evaluation of Resume which Includes tone, clarity and coherence  
+- **Personalized feedback** on resume improvement using Gemini API.  
 
 ---
 
 ## 🛠️ Technologies Used  
 
-- **LLMs & APIs:** Gemini API, OpenAI GPT, HuggingFace Transformers  
-- **Traditional NLP:** Scikit-learn, Sumy  
-- **Evaluation:** ROUGE, Cosine Similarity, CLIP, Readability, Toxicity Metrics  
-- **Visualization:** Matplotlib, Seaborn, Radar charts, Pairplots, Heatmaps  
-- **Deployment:** Streamlit  
+- **LLMs & APIs:** Gemini API, HuggingFace Transformers(BERT, BART), Stable Diffusion, Detoxify, Perspective API
+- **Traditional NLP:** Scikit-learn, Sumy, NLTK
+- **Visualization:** Matplotlib, Seaborn, Radar charts, Pairplots, Heatmaps, Barplots & Grouped Bar plots, Confusion Matrix, Plotly   
+- **Deployment:** Streamlit Cloud
 
