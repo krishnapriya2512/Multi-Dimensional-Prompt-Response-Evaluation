@@ -71,7 +71,9 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
   - Sentiment shift (Article vs Summary)  
   - Repetition & Readability Score  
 
-**Visualizations:** Comparative chart of all metrics  
+- **Visualizations:** Comparative chart of all metrics  
+
+- **Results:**  Traditional models are more reliable for factual accuracy and staying close to the original text. On the other hand, GPT models create more varied, natural-sounding, and easy-to-read content, which makes them better for things like chatbots and other applications that interact directly with users.
 
 ### Folder Structure
 **Folder**: GPT vs Tradtional models performance for tasks                                             
