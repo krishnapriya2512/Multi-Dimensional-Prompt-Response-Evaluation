@@ -1,18 +1,26 @@
-# Multi-Dimensional Evaluation and Application of Generative AI: A Study of Prompt Effectiveness, Ethical Risks, and Real-World Use Cases
+# Multi-Dimensional Evaluation and Application of Generative AI: A Study of Prompt Effectiveness, Ethical Risks, and Real-World Use Case
 
-This repository contains a collection of experiments and implementations around **Prompt Engineering and Evaluation of LLMs, GPT vs Traditional Models,Bias & Toxicity Detection, Text-to-Image Generation, and Resume Evaluation**.  
+This repository contains a collection of experiments and implementations around **Generative AI Models**. 
+**1. Prompt Engineering and Evaluation of LLMs**   
+**2. GPT vs Traditional Models**
+**3. Bias & Toxicity Detection**
+**4. Text-to-Image Generation**
+**5. Resume Evaluation and Feedback using LLM**
 
-The project explores different aspects of **Generative AI** using **Gemini API, GPT models, Transformers, Stable Diffusion, and Traditional NLP methods**, alongside various **evaluation metrics and visualizations**.  
+The project explores different aspects of **Generative AI** using **Gemini API, GPT models, Transformers, Stable Diffusion, and Traditional NLP methods**, alongside various **evaluation metrics and visualizations** for the academic purpose. 
+
+##### Motivation for the project: 
+One of the most perplexing challenges I encountered while studying LLMs was understanding how computers interpret bias, a complex and crucial factor that influences AI’s ability to mimic human thinking. Given that prompt-generated responses are central to how AI expresses reasoning, I became particularly interested in evaluating the biased outputs produced by different Generative AI models in response to various prompts.
 
 ---
 
 ## 📑 Table of Contents  
-1. [Prompt Engineering & Evaluation of LLM Response](#a-prompt-engineering-and-evaluation-of-llm-response)  
-2. [GPT vs Traditional Model Performance](#b-gpt-vs-traditional-model-performance-for-tasks)  
-3. [Bias & Toxicity Detection](#c-bias-and-toxicity-detection-in-the-text-using-llm)  
-4. [Text-to-Image Generation & Relevance Evaluation](#d-text-to-image-generation-using-llm--relevance-evaluation)  
-5. [Resume Evaluation & Feedback](#e-resume-evaluation-and-feedback-using-llm)  
-6. [Technologies Used](#technologies-used)  
+A. [Prompt Engineering and Evaluation of LLM Response](#a-prompt-engineering-and-evaluation-of-llm-response)  
+B. [GPT vs Traditional Model Performance](#b-gpt-vs-traditional-model-performance-for-tasks)  
+C. [Bias & Toxicity Detection](#c-bias-and-toxicity-detection-in-the-text-using-llm)  
+D. [Text-to-Image Generation & Relevance Evaluation](#d-text-to-image-generation-using-llm--relevance-evaluation)  
+E. [Resume Evaluation & Feedback](#e-resume-evaluation-and-feedback-using-llm)  
+F. [Tools and Technologies Used](#technologies-used)  
 
 ---
 
@@ -23,20 +31,20 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 
 ### 📝 Evaluation Metrics  
 - Response Length & Word Count  
-- Sentiment Polarity & Subjectivity  
+- Sentiment Polarity(Tone) & Subjectivity  
 - Lexical Diversity  
 - Grammar Errors & Grammar Score
-- Clartiy and Coherence
+- Clarity and Coherence
 - Prompt and response relevance
 
 ### 📊 Visualizations  
 - Prompt and Response length by category  
 - Prompt and Response Polarity & Subjectivity by category  
 - Prompt and response Lexical diversity by category  
-- Grammer Score and Grammatical error for prompt and Response
-- Clarity and Coherence plots for Prompt and Response by category
-- Correlation heatmap between numerical variables
-- Prompt and Response relevance by Category
+- Grammar Score and Grammatical error for prompt and Responses
+- Clarity and Coherence plots for Prompt and Responses by category
+- Correlation heatmap between numerical variables(Evaluated scores)
+- Prompt and Response relevance score by category
 
 ✅ Automated pipeline for evaluation  
 
@@ -63,7 +71,7 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 ### 2. Text Summarization  
 - **Dataset:** CNN/DailyMail  
 - **Traditional Approach:** Text Extraction → Tokenisation using nltk → Textrank summariser (sumy) → Evaluation of generated summary using Rouge score
-- **Transformer Approach:** Hugging Face Tokenization → Summary generation -> Evaluation of generated text
+- **Transformer Approach:** Hugging Face Tokenization → Summary generation (BART) -> Evaluation of generated text
 - **Evaluation Metrics:**  
   - Cosine & Semantic Similarity  
   - Lexical Diversity  
@@ -73,7 +81,10 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 
 - **Visualizations:** Comparative chart of all metrics  
 
-- **Results:**  Traditional models are more reliable for factual accuracy and staying close to the original text. On the other hand, GPT models create more varied, natural-sounding, and easy-to-read content, which makes them better for things like chatbots and other applications that interact directly with users.
+- **Results:**
+   - Traditional models are more reliable for factual accuracy and staying close to the original text.
+   - On the other hand, GPT models (BART) create more varied, natural-sounding, and easy-to-read content, which makes them better for things like chatbots and other applications that interact directly with users.
+   - Gemini API: Comparitive to the GPT model, Gemini performs better on flexible tasks such as summarisation, giving varied results with proper clarity, readability and coherence. This can also be used for user interaction and Feedback generation for the given task.
 
 ### Folder Structure
 **Folder**: GPT vs Tradtional models performance for tasks                                             
@@ -90,9 +101,9 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 ## C. Bias and Toxicity Detection in the Text using LLM  
 
 ### 1. Bias Detection  
-- **100 biased prompts** across categories: Gender, Religion, Ethnicity, Socioeconomic, Sexual Orientation, Neutral  
-- Used Gemini API to Classify type of Bias  
-- **Evaluation:** Classification Report + Confusion Matrix  
+- **100 biased prompts** across specific categories: Gender, Religion, Ethnicity, Socioeconomic, Sexual Orientation, Neutral  
+- Used Gemini API to classify type of Bias in above specified categories.
+- **Evaluation Metrics:** Classification Report + Confusion Matrix  
 
 ### 2. Toxicity Detection  
 - **Models Used:**  
@@ -158,10 +169,12 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 
 ---
 
-## 🛠️ Technologies Used  
+## 🛠️ Tools and Technologies Used  
 
 - **LLMs & APIs:** Gemini API, HuggingFace Transformers(BERT, BART), Stable Diffusion, Detoxify, Perspective API
-- **Traditional NLP:** Scikit-learn, Sumy, NLTK
+- **Traditional NLP:** Scikit-learn, Sumy, NLTK, PDF2Image
 - **Visualization:** Matplotlib, Seaborn, Radar charts, Pairplots, Heatmaps, Barplots & Grouped Bar plots, Confusion Matrix, Plotly   
 - **Deployment:** Streamlit Cloud
 
+---
+**Note: Incase of further clarification, please contact: kskp2512@gmail.com**
