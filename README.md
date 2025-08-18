@@ -1,11 +1,11 @@
 # Multi-Dimensional Evaluation and Application of Generative AI: A Study of Prompt Effectiveness, Ethical Risks, and Real-World Use Case
 
-This repository contains a collection of experiments and implementations around **Generative AI Models**. 
-**1. Prompt Engineering and Evaluation of LLMs**   
-**2. GPT vs Traditional Models**
-**3. Bias & Toxicity Detection**
-**4. Text-to-Image Generation**
-**5. Resume Evaluation and Feedback using LLM**
+This repository contains a collection of experiments and implementations around **Generative AI Models**.        
+**1. Prompt Engineering and Evaluation of LLMs**            
+**2. GPT vs Traditional Models**         
+**3. Bias & Toxicity Detection**            
+**4. Text-to-Image Generation**      
+**5. Resume Evaluation and Feedback using LLM**         
 
 The project explores different aspects of **Generative AI** using **Gemini API, GPT models, Transformers, Stable Diffusion, and Traditional NLP methods**, alongside various **evaluation metrics and visualizations** for the academic purpose. 
 
