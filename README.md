@@ -107,7 +107,11 @@ F. [Tools and Technologies Used](#technologies-used)
 ### 1. Bias Detection  
 - **100 biased prompts** across specific categories: Gender, Religion, Ethnicity, Socioeconomic, Sexual Orientation, Neutral  
 - Used Gemini API to classify type of Bias in above specified categories.
-- **Evaluation Metrics:** Classification Report + Confusion Matrix  
+- **Evaluation Metrics:** Classification Report + Confusion Matrix
+
+#### Results
+- The model excels in detecting Sexual Orientation and Socioeconomic bias with perfect scores (F1 = 1.0) and performs strongly on Gender and Ethnicity biases (F1 ≈ 0.9 and 0.8).
+- However, it struggles with Neutral (low precision, many false positives) and Religion (low recall, many false negatives), making these the weakest categories.
 
 ### 2. Toxicity Detection  
 - **Models Used:**  
@@ -119,7 +123,12 @@ F. [Tools and Technologies Used](#technologies-used)
 - **Visualizations:**  
   - Confusion matrices & classification reports  
   - Radar chart for overall comparison
-- **Results:** Gemini API performed well compared to the other two models, with fewer misclassifications
+
+#### Results
+- Gemini demonstrates the most comprehensive toxicity detection, covering all six categories with strong performance in severe toxicity, identity attacks, and threats.
+- Perspective provides moderate coverage in detecting toxicity.
+-  Detoxify is relatively strong in profanity but underperforms in threat and severe toxicity.
+-  Overall, Gemini is best suited for broad detection, while tool choice depends on the specific focus of toxicity monitoring.
 
 ### Folder Structure
 **Folder**: Bias and Toxicity detection in text                                           
@@ -150,7 +159,8 @@ F. [Tools and Technologies Used](#technologies-used)
     - Inception Score
     - Human Evaluation
 
-**Result:** Gemini outperformed Stable Diffusion in terms of relevance and clarity 
+#### Result:
+Both Gemini and Stable Diffusion are powerful image generation models that excel at producing high-quality, realistic images. However, based on the Evaluation metrics, Gemini appears to be better at generating images that are more easily understood and described by a language model. This could make Gemini a more predictable choice for applications that require a strong, clear, and literal interpretation of the text prompt. 
 
 ### Folder Structure
 **Folder**: Bias and Toxicity detection in text                                           
@@ -165,11 +175,11 @@ F. [Tools and Technologies Used](#technologies-used)
 
 ## E. Resume Evaluation and Feedback using LLM  
 
-- Extract resume text (PDF parsing)  
-- Resume and Job Description match percentage
-- Matched Skills with Job Description
-- Detailed Evaluation of Resume which Includes tone, clarity and coherence  
-- **Personalized feedback** on resume improvement using Gemini API.  
+### Description: 
+Developed an automated Resume Evaluator by extracting text from uploaded resumes using PDF2Image and leveraging the Gemini API for analysis. The system evaluates resumes against job descriptions, matches skills, and provides a detailed assessment focusing on tone, clarity, and coherence. It also generates personalized feedback to guide users in improving their resumes.
+
+### Result:
+Achieved accurate resume–job description match percentages, effective skill alignment detection, and actionable feedback for resume enhancement, helping users to tailor their resumes for improved job suitability.
 
 ---
 
