@@ -85,7 +85,7 @@ F. [Tools and Technologies Used](#technologies-used)
 
 - **Visualizations:** Comparative chart of all metrics  
 
-- **Results:**
+### Results
    - Traditional models are more reliable for factual accuracy and staying close to the original text.
    - On the other hand, GPT models (BART) create more varied, natural-sounding, and easy-to-read content, which makes them better for things like chatbots and other applications that interact directly with users.
    - Gemini API: Comparitive to the GPT model, Gemini performs better on flexible tasks such as summarisation, giving varied results with proper clarity, readability and coherence. This can also be used for user interaction and Feedback generation for the given task.
