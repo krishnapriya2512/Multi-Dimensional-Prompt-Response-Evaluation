@@ -46,7 +46,11 @@ F. [Tools and Technologies Used](#technologies-used)
 - Correlation heatmap between numerical variables(Evaluated scores)
 - Prompt and Response relevance score by category
 
-✅ Automated pipeline for evaluation  
+### Results
+ - Created an automated pipeline for evaluation
+ - The evaluation shows that LLM responses are generally grammatically strong (92–100%) and predominantly positive across categories.
+ - Instructional, factual, and professional prompts yield the most relevant and accurate results, while casual and creative prompts show greater subjectivity, variability, and occasional negativity.
+ - Overall, Gemini API performs reliably, with response quality varying based on prompt type.
 
 ### Folder Structure
 **Folder**: Prompt Engineering and Evaluation of LLM Response                                          
