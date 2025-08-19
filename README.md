@@ -67,13 +67,13 @@ F. [Tools and Technologies Used](#technologies-used)
 ## B. GPT Vs Traditional Model Performance for Tasks  
 
 ### 1. Sentiment Analysis  
-- **Dataset:** Amazon Polarity  
+- **Dataset:** Amazon Polarity (source:Hugging Face)
 - **Traditional Approach:** Text Preprocessing → Tfidf Vectorization → Logistic Regression → Hyperparameter tuning → Prediction & Evaluation(Classification Report)
 - **Transformer Approach:** HuggingFace pipeline for distilbert-base-uncased-finetuned-sst-2-english → Training → Prediction & Evaluation (Classification Report)
 - **Result:** Traditional Model outperformed Transformer for this task.  
 
-### 2. Text Summarization  
-- **Dataset:** CNN/DailyMail  
+### 2. Text Summarization 
+- **Dataset:** CNN/DailyMail (source:Hugging Face) 
 - **Traditional Approach:** Text Extraction → Tokenisation using nltk → Textrank summariser (sumy) → Evaluation of generated summary using Rouge score
 - **Transformer Approach:** Hugging Face Tokenization → Summary generation (BART) -> Evaluation of generated text
 - **Evaluation Metrics:**  
