@@ -15,16 +15,16 @@ One of the most perplexing challenges I encountered while studying LLMs was unde
 ---
 
 ## 📑 Table of Contents  
-A. [Prompt Engineering and Evaluation of LLM Response](#a-prompt-engineering-and-evaluation-of-llm-response)  
-B. [GPT vs Traditional Model Performance](#b-gpt-vs-traditional-model-performance-for-tasks)  
-C. [Bias & Toxicity Detection](#c-bias-and-toxicity-detection-in-the-text-using-llm)  
-D. [Text-to-Image Generation & Relevance Evaluation](#d-text-to-image-generation-using-llm--relevance-evaluation)  
-E. [Resume Evaluation & Feedback](#e-resume-evaluation-and-feedback-using-llm)  
-F. [Tools and Technologies Used](#technologies-used)  
+1. [Prompt Engineering and Evaluation of LLM Response](#a-prompt-engineering-and-evaluation-of-llm-response)  
+2. [GPT vs Traditional Model Performance](#b-gpt-vs-traditional-model-performance-for-tasks)  
+3. [Bias & Toxicity Detection](#c-bias-and-toxicity-detection-in-the-text-using-llm)  
+4. [Text-to-Image Generation & Relevance Evaluation](#d-text-to-image-generation-using-llm--relevance-evaluation)  
+5. [Resume Evaluation & Feedback](#e-resume-evaluation-and-feedback-using-llm)  
+6. [Tools and Technologies Used](#technologies-used)  
 
 ---
 
-## A. Prompt Engineering and Evaluation of LLM Response  
+## 1. Prompt Engineering and Evaluation of LLM Response  
 
 - **Dataset**: 100 prompts across 10 categories: *Factual, Creative Writing, Instructional, Philosophical, Casual, Analytical, Professional, Personal Growth, Technical, Open-ended*.  
 - Prompts were applied to the **Gemini model**, and the resulting responses were evaluated.
@@ -64,15 +64,15 @@ F. [Tools and Technologies Used](#technologies-used)
 
 ---
 
-## B. GPT Vs Traditional Model Performance for Tasks  
+## 2. GPT Vs Traditional Model Performance for Tasks  
 
-### 1. Sentiment Analysis  
+### 2.1 Sentiment Analysis  
 - **Dataset:** Amazon Polarity (source:Hugging Face)
 - **Traditional Approach:** Text Preprocessing → Tfidf Vectorization → Logistic Regression → Hyperparameter tuning → Prediction & Evaluation(Classification Report)
 - **Transformer Approach:** HuggingFace pipeline for distilbert-base-uncased-finetuned-sst-2-english → Training → Prediction & Evaluation (Classification Report)
 - **Result:** Traditional Model outperformed Transformer for this task.  
 
-### 2. Text Summarization 
+### 2.2 Text Summarization 
 - **Dataset:** CNN/DailyMail (source:Hugging Face) 
 - **Traditional Approach:** Text Extraction → Tokenisation using nltk → Textrank summariser (sumy) → Evaluation of generated summary using Rouge score
 - **Transformer Approach:** Hugging Face Tokenization → Summary generation (BART) -> Evaluation of generated text
@@ -102,9 +102,9 @@ F. [Tools and Technologies Used](#technologies-used)
 
 ---
 
-## C. Bias and Toxicity Detection in the Text using LLM  
+## 3. Bias and Toxicity Detection in the Text using LLM  
 
-### 1. Bias Detection  
+### 3.1 Bias Detection  
 - **100 biased prompts** across specific categories: Gender, Religion, Ethnicity, Socioeconomic, Sexual Orientation, Neutral  
 - Used Gemini API to classify type of Bias in above specified categories.
 - **Evaluation Metrics:** Classification Report + Confusion Matrix
@@ -113,7 +113,7 @@ F. [Tools and Technologies Used](#technologies-used)
 - The model excels in detecting Sexual Orientation and Socioeconomic bias with perfect scores (F1 = 1.0) and performs strongly on Gender and Ethnicity biases (F1 ≈ 0.9 and 0.8).
 - However, it struggles with Neutral (low precision, many false positives) and Religion (low recall, many false negatives), making these the weakest categories.
 
-### 2. Toxicity Detection  
+### 3.2 Toxicity Detection  
 - **Models Used:**  
   - Perspective API  
   - Detoxify  
@@ -145,7 +145,7 @@ F. [Tools and Technologies Used](#technologies-used)
 
 ---
 
-## D. Text-to-Image Generation using LLM & Relevance Evaluation  
+## 4. Text-to-Image Generation using LLM & Relevance Evaluation  
 - **Dataset**: 100 Prompts across 5 categories: *Nature, Cityscapes & structures, People, Commercial Products, Artistic*.
   - Prompts were applied to Gemini Model as well as Stable Diffusion and further evaluated by Metrics as well as humans.
 
@@ -173,7 +173,7 @@ Both Gemini and Stable Diffusion are powerful image generation models that excel
 
 ---
 
-## E. Resume Evaluation and Feedback using LLM  
+## 5. Resume Evaluation and Feedback using LLM  
 
 ### Description: 
 Developed an automated Resume Evaluator by extracting text from uploaded resumes using PDF2Image and leveraging the Gemini API for analysis. The system evaluates resumes against job descriptions, matches skills, and provides a detailed assessment focusing on tone, clarity, and coherence. It also generates personalized feedback to guide users in improving their resumes.
@@ -183,7 +183,7 @@ Achieved accurate resume–job description match percentages, effective skill al
 
 ---
 
-## 🛠️ Tools and Technologies Used  
+## 6. Tools and Technologies Used  
 
 - **LLMs & APIs:** Gemini API, HuggingFace Transformers(BERT, BART), Stable Diffusion, Detoxify, Perspective API
 - **Traditional NLP:** Scikit-learn, Sumy, NLTK, PDF2Image
