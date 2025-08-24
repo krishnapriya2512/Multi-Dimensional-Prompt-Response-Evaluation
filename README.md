@@ -10,6 +10,7 @@ The project explores different aspects of **Generative AI** using **Gemini API, 
 ##### Motivation for the project: 
 One of the most perplexing challenges I encountered while studying LLMs was understanding how computers interpret bias, a complex and crucial factor that influences AI’s ability to mimic human thinking. Given that prompt-generated responses are central to how AI expresses reasoning, I became particularly interested in evaluating the biased outputs produced by different Generative AI models in response to various prompts.
 
+###### Note: A combined code script is named: Multi-Dimensional_Prompt_Evaluation.ipynb
 ---
 
 ## 📑 Table of Contents  
