@@ -1,13 +1,11 @@
 # Multi-Dimensional Evaluation and Application of Generative AI: A Study of Prompt Effectiveness, Ethical Risks, and Real-World Use Case
 
 This repository contains a collection of experiments and implementations around **Generative AI Models**.        
-**1. Prompt Engineering and Evaluation of LLMs**            
-**2. GPT vs Traditional Models**         
-**3. Bias & Toxicity Detection**            
-**4. Text-to-Image Generation**      
-**5. Resume Evaluation and Feedback using LLM**         
+**1. Prompt Engineering and Evaluation of LLMs**                    
+**2. Bias & Toxicity Detection**            
+**3. Text-to-Image Generation**              
 
-The project explores different aspects of **Generative AI** using **Gemini API, GPT models, Transformers, Stable Diffusion, and Traditional NLP methods**, alongside various **evaluation metrics and visualizations** for the academic purpose. 
+The project explores different aspects of **Generative AI** using **Gemini API, GPT models, Stable Diffusion, and Traditional NLP methods**, alongside various **evaluation metrics and visualizations** for the academic purpose. 
 
 ##### Motivation for the project: 
 One of the most perplexing challenges I encountered while studying LLMs was understanding how computers interpret bias, a complex and crucial factor that influences AI’s ability to mimic human thinking. Given that prompt-generated responses are central to how AI expresses reasoning, I became particularly interested in evaluating the biased outputs produced by different Generative AI models in response to various prompts.
@@ -15,12 +13,10 @@ One of the most perplexing challenges I encountered while studying LLMs was unde
 ---
 
 ## 📑 Table of Contents  
-1. [Prompt Engineering and Evaluation of LLM Response](#a-prompt-engineering-and-evaluation-of-llm-response)  
-2. [GPT vs Traditional Model Performance](#b-gpt-vs-traditional-model-performance-for-tasks)  
-3. [Bias & Toxicity Detection](#c-bias-and-toxicity-detection-in-the-text-using-llm)  
-4. [Text-to-Image Generation & Relevance Evaluation](#d-text-to-image-generation-using-llm--relevance-evaluation)  
-5. [Resume Evaluation & Feedback](#e-resume-evaluation-and-feedback-using-llm)  
-6. [Tools and Technologies Used](#technologies-used)  
+1. [Prompt Engineering and Evaluation of LLM Response](#a-prompt-engineering-and-evaluation-of-llm-response)   
+2. [Bias & Toxicity Detection](#c-bias-and-toxicity-detection-in-the-text-using-llm)  
+3. [Text-to-Image Generation & Relevance Evaluation](#d-text-to-image-generation-using-llm--relevance-evaluation)  
+4. [Tools and Technologies Used](#technologies-used)  
 
 ---
 
@@ -64,47 +60,9 @@ One of the most perplexing challenges I encountered while studying LLMs was unde
 
 ---
 
-## 2. GPT Vs Traditional Model Performance for Tasks  
+## 2. Bias and Toxicity Detection in the Text using LLM  
 
-### 2.1 Sentiment Analysis  
-- **Dataset:** Amazon Polarity (source:Hugging Face)
-- **Traditional Approach:** Text Preprocessing → Tfidf Vectorization → Logistic Regression → Hyperparameter tuning → Prediction & Evaluation(Classification Report)
-- **Transformer Approach:** HuggingFace pipeline for distilbert-base-uncased-finetuned-sst-2-english → Training → Prediction & Evaluation (Classification Report)
-- **Result:** Traditional Model outperformed Transformer for this task.  
-
-### 2.2 Text Summarization 
-- **Dataset:** CNN/DailyMail (source:Hugging Face) 
-- **Traditional Approach:** Text Extraction → Tokenisation using nltk → Textrank summariser (sumy) → Evaluation of generated summary using Rouge score
-- **Transformer Approach:** Hugging Face Tokenization → Summary generation (BART) -> Evaluation of generated text
-- **Evaluation Metrics:**  
-  - Cosine & Semantic Similarity  
-  - Lexical Diversity  
-  - Compression Ratio  
-  - Sentiment shift (Article vs Summary)  
-  - Repetition & Readability Score  
-
-- **Visualizations:** Comparative chart of all metrics  
-
-### Results
-   - Traditional models are more reliable for factual accuracy and staying close to the original text.
-   - On the other hand, GPT models (BART) create more varied, natural-sounding, and easy-to-read content, which makes them better for things like chatbots and other applications that interact directly with users.
-   - Gemini API: Comparitive to the GPT model, Gemini performs better on flexible tasks such as summarisation, giving varied results with proper clarity, readability and coherence. This can also be used for user interaction and Feedback generation for the given task.
-
-### Folder Structure
-**Folder**: GPT vs Tradtional models performance for tasks                                             
-**Subfolders**:
-- *GPT_vs_Traditional_models.ipynb*: This is the main Python code file. This file contains the comparison of Traditional and Transformer models for tasks **Sentiment Analysis and Text summarisation**.
-- *CR_Sentiment_GPT.csv*: File contains classification report of sentiment analysis of transformer-based model.
-- *CR_Sentiment_traditional.csv*: File contains classification report of sentiment analysis of logistic regression model
-- *Sentiment_prediction_gpt.csv*: File contains true and predicted values of transformer-based model.
-- *Sentiment_prediction_tra.csv*: File contains true and predicted values of logistic regression model.
-- *Text_summarise_metrics.csv*: File contains text summarisation evaluation metric of both traditional as well as transformer-based model. 
-
----
-
-## 3. Bias and Toxicity Detection in the Text using LLM  
-
-### 3.1 Bias Detection  
+### 2.1 Bias Detection  
 - **100 biased prompts** across specific categories: Gender, Religion, Ethnicity, Socioeconomic, Sexual Orientation, Neutral  
 - Used Gemini API to classify type of Bias in above specified categories.
 - **Evaluation Metrics:** Classification Report + Confusion Matrix
@@ -113,7 +71,7 @@ One of the most perplexing challenges I encountered while studying LLMs was unde
 - The model excels in detecting Sexual Orientation and Socioeconomic bias with perfect scores (F1 = 1.0) and performs strongly on Gender and Ethnicity biases (F1 ≈ 0.9 and 0.8).
 - However, it struggles with Neutral (low precision, many false positives) and Religion (low recall, many false negatives), making these the weakest categories.
 
-### 3.2 Toxicity Detection  
+### 2.2 Toxicity Detection  
 - **Models Used:**  
   - Perspective API  
   - Detoxify  
@@ -145,7 +103,7 @@ One of the most perplexing challenges I encountered while studying LLMs was unde
 
 ---
 
-## 4. Text-to-Image Generation using LLM & Relevance Evaluation  
+## 3. Text-to-Image Generation using LLM & Relevance Evaluation  
 - **Dataset**: 100 Prompts across 5 categories: *Nature, Cityscapes & structures, People, Commercial Products, Artistic*.
   - Prompts were applied to Gemini Model as well as Stable Diffusion and further evaluated by Metrics as well as humans.
 
@@ -173,17 +131,7 @@ Both Gemini and Stable Diffusion are powerful image generation models that excel
 
 ---
 
-## 5. Resume Evaluation and Feedback using LLM  
-
-### Description: 
-Developed an automated Resume Evaluator by extracting text from uploaded resumes using PDF2Image and leveraging the Gemini API for analysis. The system evaluates resumes against job descriptions, matches skills, and provides a detailed assessment focusing on tone, clarity, and coherence. It also generates personalized feedback to guide users in improving their resumes.
-
-### Result:
-Achieved accurate resume–job description match percentages, effective skill alignment detection, and actionable feedback for resume enhancement, helping users to tailor their resumes for improved job suitability.
-
----
-
-## 6. Tools and Technologies Used  
+## 4. Tools and Technologies Used  
 
 - **LLMs & APIs:** Gemini API, HuggingFace Transformers(BERT, BART), Stable Diffusion, Detoxify, Perspective API
 - **Traditional NLP:** Scikit-learn, Sumy, NLTK, PDF2Image
